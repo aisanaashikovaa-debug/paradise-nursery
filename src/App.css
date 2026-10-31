@@ -169,3 +169,48 @@ button:hover:not(:disabled) {
     padding: 20px;
   }
 }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  cursor: pointer;
+}
+
+.cart-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-badge {
+  background: #ffffff;
+  color: #245c33;
+  border-radius: 50px;
+  padding: 4px 9px;
+  font-weight: bold;
+}
+
+.cart-item-name {
+  font-size: 22px;
+  color: #245c33;
+}
+
+.cart-item-cost,
+.cart-item-total {
+  font-size: 16px;
+}
+
+.cart-item-delete {
+  background: #b83a32;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
